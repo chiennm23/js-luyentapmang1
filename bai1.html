@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khơi tạo mảng 10 sô nguyên</title>
+</head>
+<body>
+<script>
+    let integer = [];
+    function input() {
+        let N = +prompt("Nhập số lượng số nguyên:");
+        for (let i=0;i<N;i++){
+            integer[i]= +prompt("Nhập giá trị thứ: "+i+":");
+        }
+    }
+    function display() {
+        document.write("<br>Mảng vừa nhập là: ");
+        for (let i=0;i<integer.length;i++){
+            document.write(integer[i] + ", ");
+        }
+    }
+    function than10() {
+        document.write("<br>Giá trị lớn hơn 10 la: ");
+        for (let i=0; i<integer.length; i++){
+            if (integer[i] > 10){
+                document.write(integer[i] + ', ');
+            }
+        }
+    }
+    function findMax() {
+        document.write("<br>Gia tri lon nhaat la: ");
+        integer[0] = max;
+        for (let i=1; i<integer.length; i++){
+            if(integer[i] > max){
+                max = integer[i];
+            }
+        }
+        document.write(+integer[i]);
+    }
+        input();
+        display();
+        than10();
+        findMax();
+</script>
+</body>
+</html>
