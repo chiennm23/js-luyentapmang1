@@ -27,19 +27,23 @@
             }
         }
     }
-    function findMax() {
-        document.write("<br>Gia tri lon nhaat la: ");
-        integer[0] = max;
-        for (let i=1; i<integer.length; i++){
-            if(integer[i] > max){
-                max = integer[i];
+    function findMax(){
+        let max=false;
+        if(integer.length>0){
+            max=integer[0];
+            for(let i=1;i<integer.length;i++){
+                if(integer[i]>max){
+                    max=integer[i];
+                }
             }
         }
-        document.write(+integer[i]);
+        return max;
     }
         input();
         display();
         than10();
+    let maxvalue = findMax(integer);
+    document.write("<br>Gia tri lon nhat la: "+maxvalue);
         findMax();
 </script>
 </body>
