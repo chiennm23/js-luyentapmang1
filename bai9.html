@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noi 2 mang a,b thanh mang c</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let NumA= +prompt("Nhap do dai mang a");
+    for (let i=0; i< NumA; i++){
+        a[i] = +prompt("Nhap phan tu thu " +i);
+    }
+
+    let b = [];
+    let NumB= +prompt("Nhap do dai mang b");
+    for (let i=0; i< NumB; i++){
+        b[i] = +prompt("Nhap phan tu thu " +i);
+    }
+    document.write("<br>Mang a la: " +a);
+    document.write("<br>Mang b la: " +b);
+    let c = a.concat(b);
+    document.write("<br>Mang c la: " +c);
+</script>
+</body>
+</html>

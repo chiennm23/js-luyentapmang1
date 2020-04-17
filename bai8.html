@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sap xep thu tu giam dan</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let N = +prompt("Nhap do dai cua mang:");
+    for (let i=0; i<N; i++){
+        arr[i] = +prompt("Nhap phan tu thu "+i);
+    }
+    arr.sort(function (a,b) {
+        return(b-a);
+    });
+    document.write("mang dc sap xep nhu sau: " +arr);
+</script>
+</body>
+</html>
